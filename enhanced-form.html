@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Club</title>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Photography Club</h1>
+    <p>Explore our events, learn photography, and connect with other enthusiasts!</p>
+  </header>
+
+  <!-- ABOUT THE CLUB/LISTS -->
+  <section>
+    <h2>About the Club</h2>
+
+    <h3>Our Focus Areas:</h3>
+    <ol>
+      <li>Photography</li>
+      <ul>
+        <li>Portrait Photography</li>
+        <li>Nature & Landscape</li>
+        <li>Street Photography</li>
+      </ul>
+      <li>Videography</li>
+      <ul>
+        <li>Documentary</li>
+        <li>Event Coverage</li>
+        <li>Short Films</li>
+      </ul>
+      <li>Editing & Post-Processing</li>
+      <ul>
+        <li>Photo Editing</li>
+        <li>Video Editing</li>
+        <li>Color Grading</li>  
+      </ul>
+    </ol>
+
+     <!--how to joIn  -->
+    <h3>Steps to Join:</h3>
+    <ol type="i">
+      <li>Fill out the membership form</li>
+      <li>Upload sample work</li>
+      <li>Attend an onboarding session</li>
+    </ol>
+  </section>
+
+  <!-- EVENT HIGHLIGHTS/ MEDIA  -->
+  <section>
+    <h2>Event Highlights</h2>
+
+    <h3>Photos from Last Week Retreat</h3>
+    <img src="https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg" alt="Club Retreat Photo" width="50%">
+
+    <h3>Club Theme Song</h3>
+    <!--  -->
+    <audio controls>
+      <source src="https://open.spotify.com/track/4RP1vUd50cwIGmWTWsEHnJ?si=ca960be416774530" type="audio">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Mini Documentary</h3>
+    <video controls width="300">
+      <source src="cant seem to find a copyright free video" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h3>Upcoming Events</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Event</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-08-15</td>
+          <td>Sunset Photoshoot</td>
+          <td>Lake Victoria</td>
+        </tr>
+        <tr>
+          <td>2025-09-01</td>
+          <td>Workshop: Photo Editing</td>
+          <td>Kisumu Innovation Hub</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SECTION 3: MEMBERSHIP FORM -->
+  <section>
+    <h2>Membership Registration Form</h2>
+    <form action="/submit" method="post">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="fullname" placeholder="Akinyi Njeri" required minlength="3"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="akinyinjeri@gmail.com" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 0712345678" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Photography Interests</legend>
+        <label for="category">Area of Interest:</label>
+        <select id="category" name="category" required>
+          <option value="">--Select--</option>
+          <option value="portrait">Portrait</option>
+          <option value="nature">Nature</option>
+          <option value="street">Street</option>
+          <option value="editing">Post-Processing</option>
+        </select><br><br>
+
+        <label>Equipment Owned:</label><br>
+        <input type="checkbox" name="gear" value="film"> Film Camera<br>
+        <input type="checkbox" name="gear" value="dslr"> DSLR<br>
+        <input type="checkbox" name="gear" value="mirrorless"> Mirrorless<br>
+        <input type="checkbox" name="gear" value="smartphone"> Smartphone<br><br>
+        <input type="checkbox" name="gear" value="drone"> Drone<br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Upload Sample Work</legend>
+        <label for="sample">Photo or Portfolio URL:</label>
+        <input type="url" id="sample" name="portfolio" required><br><br>
+
+        <label for="comments">Tell us why you want to join:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="40" minlength="10" required></textarea>
+      </fieldset>
+
+      <br>
+      <button type="submit">Register</button>
+
+    </form>
+  </section>
+  <br>
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy;2025 <a href="https://github.com/khaif-dev">Khaif-dev llc</a> . All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
